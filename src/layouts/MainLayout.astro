@@ -13,7 +13,7 @@ interface Props {
   heroImage?: string;
 }
 
-const { title, description, heroImage } = Astro.props;
+const { title, description, heroImage }: Props = Astro.props;
 ---
 
 <!doctype html>
@@ -24,7 +24,7 @@ const { title, description, heroImage } = Astro.props;
   </head>
   <body class="bg-[#161616] text-stone-200">
     <Header />
-    <main class="max-w-5xl px-3 md:px-6 mx-auto">
+    <main class="mx-auto max-w-7xl lg:px-8 md:px-6 px-3 lg:max-w-8xl">
       <slot />
     </main>
     <Footer />
