@@ -1,0 +1,22 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/MainLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <section class="mt-8">
+    <h1 class="text-2xl mt-4 mb-4 underline">Disclaimer </h1>
+    <p>The content provided on this blog is intended for informational purposes only and should not be construed as investment advice. Any market commentary, analysis, or opinions expressed herein are based on my personal interpretation of current market conditions and trends.
+
+      It's important to note that I am not a licensed financial advisor, and the information presented here may not be suitable for your individual financial situation or investment objectives.
+      
+      Before making any investment decisions, it is crucial to consider your own financial condition, risk tolerance, and investment goals. Always consult a qualified financial advisor who can provide personalized advice tailored to your specific needs and circumstances.
+      
+      I do not assume any responsibility or liability for any financial losses or damages resulting from the use of the information provided on this blog. By accessing and using this website, you agree to indemnify and hold harmless the author from any claims arising from your reliance on the content herein.
+      
+      Remember that investing carries inherent risks, and past performance is not indicative of future results. Always conduct thorough research and exercise caution when making investment decisions.</p>
+  </section>
+</Layout>
