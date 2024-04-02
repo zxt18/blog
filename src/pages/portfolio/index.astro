@@ -1,28 +1,80 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
-import { getCollection } from "astro:content";
 import Layout from "../../layouts/MainLayout.astro";
-import PostCard from "../../components/PostCard.astro";
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+import { PortfolioTable } from "../../components/PortfolioTable";
+import { STOCK_TICKERS, calculateNetLiquidationValue, getPortfolioData, getStockNameAndPrice } from "@utils/utils";
+
+const stockNameAndPrice = await getStockNameAndPrice(STOCK_TICKERS);
+const portfolioData = await getPortfolioData();
+const cashDepositedInPortfolio = Object.values(portfolioData).reduce((sum, obj) => sum + obj.units * obj.averagePrice, 0);
+const netLiquidationValue = calculateNetLiquidationValue(portfolioData, stockNameAndPrice)
+const paperGains = (netLiquidationValue - cashDepositedInPortfolio)
 ---
-
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-  <section class="mt-8">
-    <h1 class="text-2xl font-bold mt-4">Posts</h1>
-    <ul>
-      {
-        posts.map((post) => (
-          <PostCard
-            title={post.data.title}
-            desc={post.data.description}
-            pubDate={post.data.pubDate}
-            href={post.slug}
-          />
-        ))
-      }
-    </ul>
+  <section class="container mt-8">
+    <div class="portfolio-summary">
+      <div class="summary-card">
+        <h3>Cash Deposited</h3>
+        <p class="amount">${cashDepositedInPortfolio.toLocaleString()}</p>
+      </div>
+      <div class="summary-card">
+        <h3>Net Liquidation Value</h3>
+        <p class="amount">${netLiquidationValue.toLocaleString()}</p>
+      </div>
+
+      <div class="summary-card">
+        <h3>Gains</h3>
+        <p class="amount positive" id="gains-amount">${paperGains.toLocaleString()}</p>
+      </div>
+    </div>
+    <PortfolioTable stockNameAndPrice={stockNameAndPrice} portfolioData={portfolioData} client:load />
   </section>
 </Layout>
+
+<style>
+
+  /* Summary Card */
+.summary-card {
+  background-color: #1c1c1e;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.summary-card .amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Portfolio Summary */
+.portfolio-summary {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .portfolio-summary {
+    flex-direction: column;
+  }
+}
+
+.amount.positive {
+  color: green;
+}
+
+.amount.negative {
+  color: red;
+}
+
+
+</style>

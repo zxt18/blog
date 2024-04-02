@@ -4,7 +4,7 @@ description: "The Winner Takes It All | 2024 Macro Outlook"
 pubDate: "March 10 2024"
 ---
 
-"The winner takes it all, the loser has to fall" - these are the lyrics of an award winning track by Swedish popgroup ABBA. Ironically, this is exactly what is manifesting in the equities space as we speak. The Magnificent 7 are getting a huge bid while the remaining 400+ laggards of the S&P 500 are left for dead. 
+<!-- "The winner takes it all, the loser has to fall" - these are the lyrics of an award winning track by Swedish popgroup ABBA. Ironically, this is exactly what is manifesting in the equities space as we speak. The Magnificent 7 are getting a huge bid while the remaining 400+ laggards of the S&P 500 are left for dead. 
 
 ![Ex-Mag7](../../../public/ex-mag7.png)
 
@@ -103,4 +103,4 @@ My philosophy is simple, focus on names with the most outs, while having a margi
 
 
 The investment thesis is this : 
-1) Buy companies that have been temporarily impaired due to mistakes (mismanagement of inventory, F.U.D news, cyclical downturns) and hence marked down and sold at peak pessimism, that will eventually recover.
+1) Buy companies that have been temporarily impaired due to mistakes (mismanagement of inventory, F.U.D news, cyclical downturns) and hence marked down and sold at peak pessimism, that will eventually recover. -->
