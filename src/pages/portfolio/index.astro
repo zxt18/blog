@@ -3,7 +3,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
 import Layout from "../../layouts/MainLayout.astro";
 
 import { PortfolioTable } from "../../components/PortfolioTable";
-import { STOCK_TICKERS, calculateNetLiquidationValue, getPortfolioData, getStockNameAndPrice } from "@utils/utils";
+import { STOCK_TICKERS, calculateNetLiquidationValue, getPortfolioData, getStockNameAndPrice} from "../../utils/utils";
+
 
 const stockNameAndPrice = await getStockNameAndPrice(STOCK_TICKERS);
 const portfolioData = await getPortfolioData();

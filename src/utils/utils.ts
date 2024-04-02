@@ -61,12 +61,10 @@ export function calculateNetLiquidationValue(portfolioData : PortfolioProps, sto
     let netLiquidationValue = 0;
   
     for (const ticker in portfolioData) {
-      const { units, averagePrice } = portfolioData[ticker];
+      const { units } = portfolioData[ticker];
       const { price } = stockPriceData[ticker] || { price: 0 }; // Handle missing stock price data
   
       const currentValue = units * price;
-      const costBasis = units * averagePrice;
-      const unrealizedGain = currentValue - costBasis;
   
       netLiquidationValue += currentValue;
     }

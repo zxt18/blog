@@ -1,5 +1,4 @@
-import React from 'react';
-import { STOCK_TICKERS, type PortfolioProps, type StockNameAndPriceProps } from '@utils/utils.ts';
+import { STOCK_TICKERS, type PortfolioProps, type StockNameAndPriceProps } from "../utils/utils"
 import './PortfolioTable.css'; // Import CSS file for styling
 
 export const PortfolioTable = ({ stockNameAndPrice, portfolioData }: { stockNameAndPrice: StockNameAndPriceProps, portfolioData: PortfolioProps }) => {

@@ -4,12 +4,6 @@
     "jsx": "react-jsx",
     "strictNullChecks": true,
     "module": "ESNext",
-    "baseUrl": "/Users/zatan/github/blog/src",
-    "paths": {
-      "@utils/*": [
-        "utils/*"
-      ]
-    },
     "jsxImportSource": "react"
   },
   "ts-node": {
