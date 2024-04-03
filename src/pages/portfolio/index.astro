@@ -3,33 +3,40 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
 import Layout from "../../layouts/MainLayout.astro";
 
 import { PortfolioTable } from "../../components/PortfolioTable";
-import { STOCK_TICKERS, calculateNetLiquidationValue, getPortfolioData, getStockNameAndPrice} from "../../utils/utils";
+import {calculateNetLiquidationValue, getPortfolioData, getStockStaticData} from "../../utils/utils";
 
 
-const stockNameAndPrice = await getStockNameAndPrice(STOCK_TICKERS);
+const stockStaticData = await getStockStaticData();
 const portfolioData = await getPortfolioData();
 const cashDepositedInPortfolio = Object.values(portfolioData).reduce((sum, obj) => sum + obj.units * obj.averagePrice, 0);
-const netLiquidationValue = calculateNetLiquidationValue(portfolioData, stockNameAndPrice)
+const netLiquidationValue = calculateNetLiquidationValue(portfolioData, stockStaticData)
 const paperGains = (netLiquidationValue - cashDepositedInPortfolio)
+const paperGainsClass = paperGains >=0 ?  'amount text-green-500' : 'amount text-red-500'
+const returns = (paperGains/cashDepositedInPortfolio * 100 ).toFixed(3)
+const returnsGainsClass = paperGains >=0 ?  'amount text-green-500' : 'amount text-red-500'
+
 ---
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <section class="container mt-8">
     <div class="portfolio-summary">
       <div class="summary-card">
         <h3>Cash Deposited</h3>
-        <p class="amount">${cashDepositedInPortfolio.toLocaleString()}</p>
+        <p class="amount">${cashDepositedInPortfolio.toFixed(1)}</p>
       </div>
       <div class="summary-card">
         <h3>Net Liquidation Value</h3>
-        <p class="amount">${netLiquidationValue.toLocaleString()}</p>
+        <p class="amount">${netLiquidationValue.toFixed(1)}</p>
       </div>
-
       <div class="summary-card">
         <h3>Gains</h3>
-        <p class="amount positive" id="gains-amount">${paperGains.toLocaleString()}</p>
+        <p class=`${paperGainsClass}`>${paperGains.toFixed(1)}</p>
+      </div>
+      <div class="summary-card">
+        <h3>Returns</h3>
+        <p class=`${returnsGainsClass}`>{returns}%</p>
       </div>
     </div>
-    <PortfolioTable stockNameAndPrice={stockNameAndPrice} portfolioData={portfolioData} client:load />
+    <PortfolioTable stockStaticData={stockStaticData} portfolioData={portfolioData} client:load />
   </section>
 </Layout>
 
@@ -46,14 +53,15 @@ const paperGains = (netLiquidationValue - cashDepositedInPortfolio)
 
 .summary-card h3 {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0.5rem;
 }
 
 .summary-card .amount {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
+
 
 /* Portfolio Summary */
 .portfolio-summary {

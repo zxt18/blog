@@ -1,8 +1,12 @@
-import { STOCK_TICKERS, type PortfolioProps, type StockNameAndPriceProps } from "../utils/utils"
+import { getStockStaticData, type PortfolioProps, type StockStaticData} from "../utils/utils"
 import './PortfolioTable.css'; // Import CSS file for styling
 
-export const PortfolioTable = ({ stockNameAndPrice, portfolioData }: { stockNameAndPrice: StockNameAndPriceProps, portfolioData: PortfolioProps }) => {
-  const sortedTickers = [...STOCK_TICKERS].sort((a, b) => {
+const stockJson= await getStockStaticData()
+const stockTickers = Object.keys(stockJson)
+
+
+export const PortfolioTable = ({ stockStaticData, portfolioData }: { stockStaticData: StockStaticData, portfolioData: PortfolioProps }) => {
+  const sortedTickers = [...stockTickers].sort((a, b) => {
     const aPercentage = portfolioData[a]?.portfolioPercentage || 0;
     const bPercentage = portfolioData[b]?.portfolioPercentage || 0;
     return bPercentage - aPercentage; // Descending order
@@ -12,19 +16,20 @@ export const PortfolioTable = ({ stockNameAndPrice, portfolioData }: { stockName
     return (
       <tbody>
         {sortedTickers.map((ticker, index) => {
-          const nameAndPrice = stockNameAndPrice[ticker];
+          const stockData = stockStaticData[ticker];
           const portfolioInfo = portfolioData[ticker];
-          const returns = ((nameAndPrice.price / portfolioInfo.averagePrice) - 1) * 100
+          const returns = ((stockData.currentPrice / portfolioInfo.averagePrice) - 1) * 100
+          const returnsClassName = returns >= 0 ? 'text-green-500' : 'text-red-500';
           return (
-            <tr key={index}>
+            <tr className="hover:-translate-y-0.5 hover:shadow-2xl " key={index}>
               <td>{index + 1}</td>
-              <td>{nameAndPrice.name}</td>
+              <td className="text-blue-600 hover:underline"><a href={stockData.website} target="_blank">{stockData.longName}</a></td>
               <td>{ticker}</td>
               <td>{portfolioInfo.units}</td>
               <td>{portfolioInfo.portfolioPercentage}%</td>
               <td>${portfolioInfo.averagePrice.toFixed(2)}</td>
-              <td>${nameAndPrice.price.toFixed(2)}</td>
-              <td>{returns.toFixed(2)} %</td>
+              <td>${stockData.currentPrice.toFixed(2)}</td>
+              <td className={returnsClassName}>{returns.toFixed(2)} %</td>
             </tr>
           );
         })}

@@ -10,9 +10,9 @@ The following is opinion and not advice. Your investment objective, risk-toleran
 ### Preface
 While the notion of an "Investing Machine" capable of predicting market movements and generating extraordinary gains seems like something market strategists should strive for, the reality is that such a constantly self-calibrating system is virtually impossible.
 
-_The need for overly complex mathematical models that are often fed noisy, unnormalized garbage data, that claims to have forecasting value, is often a bullshit sales tactic to impress prospective investors, defying Occam's razor principle of favoring simplicity_. Within this blogpost, i'll share with you a replicable investment framework.
+The need for overly complex mathematical models that are often fed noisy, unnormalized garbage data, that claims to have forecasting value, is often a bullshit sales tactic to impress prospective investors, defying Occam's razor principle of favoring simplicity. Within this blogpost, i'll share with you a replicable investment framework.
 
-### A replicable investment framework
+### The Investment Framework
 For retail investors seeking a replicable, time-tested investment framework that could lead to outsized returns, the name of the game lies in a few fundamental principles:
 
 1. Time Arbitrage and Bargain Hunting
@@ -23,7 +23,7 @@ For retail investors seeking a replicable, time-tested investment framework that
 I will explore each of these elements within this article to develop a time-tested, retail-replicable investing framework that doesn't require you bueing glued to trading screens, constantly refreshing price feeds.
 
 ### Time Arbitrage and Bargain Hunting Is Your Edge
-Just like how the house in your favorite casino 🎰 has an edge over you, **the retail investor actually has an edge over instutional investors when it comes to the stock market**. The key is that you have compete on a **longer time frame**. This powerful and often overlooked edge in investing is called **time arbitrage**. 
+Just like how the house in your favorite casino 🎰 has an edge over you, **the retail investor actually has an edge over instutional investors when it comes to the stock market**. The key is to compete at the right domain, which is to compete on a **longer time frame**. This powerful and often overlooked edge in investing is called **time arbitrage**. 
 
 **Time arbitrage** simply means purchasing stocks that are sold based on a short-term outlook, with little change in the long-term prospects of the company. The edge for an investor with a long investing timeframe, simply comes from institutional investors consistently having short-term performance pressures, forcing them to hop around to the next 'hot' idea every 6-18 months. Fund managers have to benchmark their performance on an annually (somtimes quarterly) basis to attract client investment inflows, which is why they often aren't holding shares of companies that are still in the midst of finding their footing.
 
@@ -42,15 +42,15 @@ This all contributes to your edge as a long-term investor, empowering you to ide
 
 ![Puck Analogy](../../../public/puck-analogy.png)
 
-> "Skate to where the puck is going to be, not where it has been" - Waynze Gretzky
+> "I skate to where the puck is going to be, not where it has been" - Waynze Gretzky
 
 
 
-The great hockey player Wayne Gretzky provides a great hockey analogy to investing : **"You would want to skate to where the puck is going to be, not where it has been"**, and that means not chasing overcrowded picks like Nvidia at $1000 a share, but instead look for names under the surface that hasn't really budged.
+The great hockey player Wayne Gretzky provides a great hockey analogy to investing : **"You would want to skate to where the puck is going to be, not where it has been"**, and that means not having to chase overcrowded picks like Nvidia at $1000 a share or any other hot stock, but instead look for names under the surface that hasn't really budged.
 
 
 
-The curve below illustrates when you should start building a position and accumulate shares. Institutional investors have strict mandates and run a career risk if they have huge drawdowns, hence why they tend to get in on stocks that have reached beyond the Skepticism phase.  **The bulk of the gains tend to happen during the move from deep pessimism to the return of optimism, and it tends to happen very quickly as well**. The long-term investor can then slowly ride it to euphoria -- the stage when valuation multiples expand to new highs, also the stage where you begin trimming positions
+The curve below illustrates when you should start building a position and accumulate shares. Institutional investors have strict mandates and run a career risk if they have huge drawdowns, hence why they feel more safe to get in on stocks that have reached beyond the Skepticism phase. **The bulk of the gains tend to happen during the move from deep pessimism to the return of optimism, and it tends to happen very quickly as well**. The long-term investor can then slowly ride it to euphoria -- the stage when valuation multiples expand to new highs, also the stage where you begin trimming positions. Remember : Market optimism of a stock, emulates the price trend, when it goes through the roof, everyone will have a positive opinion of it.
 ![The Templeton Curve](../../../public/euphoria.png)
 
  Human nature and market structure allows the opportunistic long-term investor to scoop up shares of wonderful businesses/brands at a discounted price. Afterall, **Wall Street is the only place where everyone runs for the exist when there is a fire sale**.

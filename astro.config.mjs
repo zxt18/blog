@@ -16,5 +16,8 @@ export default defineConfig({
     shikiConfig: {
       theme: "one-dark-pro"
     }
-  }
+  },
+  // root: './blog',
+  // publicDir: './public',
 });
+
