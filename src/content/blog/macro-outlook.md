@@ -1,7 +1,7 @@
 ---
 title: "Equity Market Outlook for 2024"
-description: "The Winner Takes It All | 2024 Macro Outlook"
-pubDate: "March 10 2024"
+description: "2024 Macro Outlook"
+pubDate: "April 30 2024"
 ---
 
 <!-- "The winner takes it all, the loser has to fall" - these are the lyrics of an award winning track by Swedish popgroup ABBA. Ironically, this is exactly what is manifesting in the equities space as we speak. The Magnificent 7 are getting a huge bid while the remaining 400+ laggards of the S&P 500 are left for dead. 
