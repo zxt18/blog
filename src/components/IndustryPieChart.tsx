@@ -16,7 +16,11 @@ export const options = {
   fillOpacity: 0.5,
   legend: {
     textStyle: { color: 'white' }
-}
+},
+  chartArea: {
+    width: '90%',
+    height: '80%',
+  },
 };
 
 export function App() {
@@ -66,8 +70,7 @@ export const IndustryPieCharts= () => {
         chartType="PieChart"
         data={uniqueIndustry}
         options={options}
-        width={"100%"}
-        height={"600px"}
+        height="80vh"
       />
     );
 
