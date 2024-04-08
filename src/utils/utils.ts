@@ -11,12 +11,12 @@ export interface StockStaticData {
   [key: string]: {
     symbol: string;
     longName: string;
-    sector: string;
+    industry: string;
     currentPrice: number;
     website: string;
+    country:string;
   };
 }
-
 
 export function calculateNetLiquidationValue(portfolioData : PortfolioProps, stockStaticData : StockStaticData) {
   let netLiquidationValue = 0;
@@ -57,99 +57,111 @@ export async function getPortfolioData(): Promise<PortfolioProps> {
 
 export async function getStockStaticData(): Promise<StockStaticData> {
   const stockDataJson: StockStaticData = {
-    "AAP": {
+      "AAP": {
         "symbol": "AAP",
         "longName": "Advance Auto Parts, Inc.",
-        "sector": "Consumer Cyclical",
-        "currentPrice": 84.27,
-        "website": "https://shop.advanceautoparts.com"
-    },
-    "CPS": {
+        "industry": "Specialty Retail",
+        "currentPrice": 78.13,
+        "website": "https://shop.advanceautoparts.com",
+        "country": "United States"
+      },
+      "CPS": {
         "symbol": "CPS",
         "longName": "Cooper-Standard Holdings Inc.",
-        "sector": "Consumer Cyclical",
-        "currentPrice": 15.97,
-        "website": "https://www.cooperstandard.com"
-    },
-    "PYPL": {
+        "industry": "Auto Parts",
+        "currentPrice": 18.04,
+        "website": "https://www.cooperstandard.com",
+        "country": "United States"
+      },
+      "PYPL": {
         "symbol": "PYPL",
         "longName": "PayPal Holdings, Inc.",
-        "sector": "Financial Services",
-        "currentPrice": 65.095,
-        "website": "https://www.paypal.com"
-    },
-    "GNRC": {
+        "industry": "Credit Services",
+        "currentPrice": 66.34,
+        "website": "https://www.paypal.com",
+        "country": "United States"
+      },
+      "GNRC": {
         "symbol": "GNRC",
         "longName": "Generac Holdings Inc.",
-        "sector": "Industrials",
-        "currentPrice": 128.52,
-        "website": "https://www.generac.com"
-    },
-    "CRK": {
+        "industry": "Specialty Industrial Machinery",
+        "currentPrice": 135.51,
+        "website": "https://www.generac.com",
+        "country": "United States"
+      },
+      "CRK": {
         "symbol": "CRK",
         "longName": "Comstock Resources, Inc.",
-        "sector": "Energy",
-        "currentPrice": 9.205,
-        "website": "https://www.comstockresources.com"
-    },
-    "JD": {
+        "industry": "Oil & Gas E&P",
+        "currentPrice": 9.32,
+        "website": "https://www.comstockresources.com",
+        "country": "United States"
+      },
+      "JD": {
         "symbol": "JD",
         "longName": "JD.com, Inc.",
-        "sector": "Consumer Cyclical",
-        "currentPrice": 27.215,
-        "website": "https://www.jd.com"
-    },
-    "SWK": {
+        "industry": "Internet Retail",
+        "currentPrice": 25.94,
+        "website": "https://www.jd.com",
+        "country": "China"
+      },
+      "SWK": {
         "symbol": "SWK",
         "longName": "Stanley Black & Decker, Inc.",
-        "sector": "Industrials",
-        "currentPrice": 95.69,
-        "website": "https://www.stanleyblackanddecker.com"
-    },
-    "VFC": {
+        "industry": "Tools & Accessories",
+        "currentPrice": 95.25,
+        "website": "https://www.stanleyblackanddecker.com",
+        "country": "United States"
+      },
+      "VFC": {
         "symbol": "VFC",
         "longName": "V.F. Corporation",
-        "sector": "Consumer Cyclical",
-        "currentPrice": 14.065,
-        "website": "https://www.vfc.com"
-    },
-    "MMM": {
+        "industry": "Apparel Manufacturing",
+        "currentPrice": 13.52,
+        "website": "https://www.vfc.com",
+        "country": "United States"
+      },
+      "MMM": {
         "symbol": "MMM",
         "longName": "3M Company",
-        "sector": "Industrials",
-        "currentPrice": 93.0201,
-        "website": "https://www.3m.com"
-    },
-    "BABA": {
+        "industry": "Conglomerates",
+        "currentPrice": 91.93,
+        "website": "https://www.3m.com",
+        "country": "United States"
+      },
+      "BABA": {
         "symbol": "BABA",
         "longName": "Alibaba Group Holding Limited",
-        "sector": "Consumer Cyclical",
-        "currentPrice": 72.43,
-        "website": "https://www.alibabagroup.com"
-    },
-    "CCI": {
+        "industry": "Internet Retail",
+        "currentPrice": 71.71,
+        "website": "https://www.alibabagroup.com",
+        "country": "China"
+      },
+      "CCI": {
         "symbol": "CCI",
         "longName": "Crown Castle Inc.",
-        "sector": "Real Estate",
-        "currentPrice": 102.18,
-        "website": "https://www.crowncastle.com"
-    },
-    "GOOS": {
+        "industry": "REIT - Specialty",
+        "currentPrice": 100.19,
+        "website": "https://www.crowncastle.com",
+        "country": "United States"
+      },
+      "GOOS": {
         "symbol": "GOOS",
         "longName": "Canada Goose Holdings Inc.",
-        "sector": "Consumer Cyclical",
-        "currentPrice": 11.555,
-        "website": "https://www.canadagoose.com"
-    },
-    "XPEV": {
+        "industry": "Apparel Manufacturing",
+        "currentPrice": 11.14,
+        "website": "https://www.canadagoose.com",
+        "country": "Canada"
+      },
+      "XPEV": {
         "symbol": "XPEV",
         "longName": "XPeng Inc.",
-        "sector": "Consumer Cyclical",
-        "currentPrice": 7.415,
-        "website": "https://heyxpeng.com"
+        "industry": "Auto Manufacturers",
+        "currentPrice": 7.38,
+        "website": "https://heyxpeng.com",
+        "country": "China"
+      }
     }
-  };
-
   return stockDataJson;
 }
 
