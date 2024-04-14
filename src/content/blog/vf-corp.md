@@ -54,7 +54,7 @@ VF Corp under Bracken Darrell announced a transformation plan called "Reinvent" 
 - In their most recent quarter, the company has worked down inventories and significantly improved their cash conversion cycle, achieving positive changes in accounts receivable.
 
 ## Valuation Analysis
-The North Face (TNF) brand under VFC alone generates $3.6 billion in revenue annually and is still continuing to grow. 
+The North Face (TNF) brand, which is one of VFC's brands, alone generates $3.6 billion in revenue annually and is still continuing to grow. 
 
 In comparison, Crocs, a footwear company with only two brands, generates $3.9 billion in revenue and has a market capitalization of $7.5 billion. 
 
@@ -63,4 +63,4 @@ VF Corp, with 13 brands, of which TNF alone generates $3.6 billion in revenue, i
 
 Here's a DCF Model assuming 0% growth of VFC's net income in perpetuity. 
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfVraRxX7JS6bAB9daSzm4wdFd0kwVMSWZ5khtvuSEzCwtiaIdfNOBcgPdFvSCYjGKoHVl6L72wT6J/pubhtml?widget=true&amp;headers=false" width="100%" height="900"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfVraRxX7JS6bAB9daSzm4wdFd0kwVMSWZ5khtvuSEzCwtiaIdfNOBcgPdFvSCYjGKoHVl6L72wT6J/pubhtml?widget=true&amp;headers=false" width="200%" height="800"></iframe>
