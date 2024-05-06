@@ -12,13 +12,13 @@ VF Corp is one of the world's largest footwear, apparel, and accessories compani
 ### The Fall from Grace
 The stock has crashed 88% from its all-time high of $100 per share and is currently trading at $12 per share. What has changed,you may ask ? The sell-off can be attributed to all of these factors :
 
-1. Early 2019, VF Corp sold of their denim brands (Wrangler and Lee Jeans to now known as Kontoor Brands), which have since shown resilient growth on the top and bottom line.
+1. Early 2019, VF Corp sold of their denim brands (Wrangler and Lee Jeans, now known as Kontoor Brands), which have since shown resilient growth on the top and bottom line.
 2. Dec 2020, they did a $2.1 billion debt-financed acquisition of Supreme, which has since resulted in approximately 800 million in impairment cost, and the company has yet to succeed in monetizing the Supreme brand.
-3. Over-ordering of inventories during COVID-19, resulting in the need to sell inventory at a discount.
-4. Vans' sales deteriorating 15% year-over-year in 2022 and a further 22% year-over-year in 2023, resulting in an accumulated decline of 34% from peak Vans sales.
-5. March 17 2022, FED begins rate hikes to curb inflation. It increased from 0.25% in March 2022 to 5.25% in July 2023. This affects the cost of financing for VFC given their debt pile.
+3. Over-ordering of inventories during COVID-19, resulting in the need to sell their apparel/footwear inventory at a discount.
+4. Vans' sales deteriorated 15% year-over-year in 2022 and a further 22% year-over-year in 2023, resulting in an accumulated decline of 34% from peak Vans sales in 2020, reversing all the former growth.
+5. March 17 2022, FED begins rate hikes to curb inflation. It increased from 0.25% in March 2022 to 5.25% in July 2023. This affects the cost of financing for VFC given their huge debt pile.
 6. In Dec 2022, Steve Rendle as the CEO at the time made a sudden exit from the company during a time of deteriorating sales. Company lost its direction and an interim CEO had to be put in place
-7. In July 2023, a new CEO, Bracken Darrell (former Logitech CEO), was put in place to revitalize the brands, but he subsequently cut revenue and earnings guidance, cut the dividend yield from ~5% to 0.9%, and declared multiple asset write-downs. This further crashed the stock price, while the company announced the "Reinvent" program, a 4 year plan to bolster growth.
+7. In July 2023, a new CEO, Bracken Darrell (former Logitech CEO), was put in place to revitalize the brands, but he subsequently cut revenue and earnings guidance, cut the dividend yield from ~5% to 0.9%, and declared multiple asset write-downs. This further crashed the stock price, meanwhile, the company announced the "Reinvent" program under Bracken, a 4 year plan to bolster growth of $VFC.
 8. As of October 2023, VFC had become a debt-ridden company with upcoming debt maturities to refinance, making it highly susceptible to interest rate fluctuations. The US 10-Year Yield at that time hit a 52-week high of 5% in October 2023, and the stock slid to $13.
 9. In April 2024, VFC was dropped from all S&P 500-related indices and the FTSE All-World Index due to its market cap falling into the small-cap category, further contributing to the slide in the share price.
 10. On April 11, 2024, the Consumer Price Index (a measure of inflation) was higher than expected, pushing back the need for the FED to cut interest rates, and VFC's stock slid to a 15-year low of $12 per share, last seen during the 2018 Financial Crisis.
@@ -33,7 +33,7 @@ Despite the deteriorating sales, I believe the bottom is near, and the company h
 
 ### New CEO: Bracken Darrell
 
-Bracken Darrell has an amazing track record in leading consumer product companies and elevating the consumer experience. He previously served as the CEO of Logitech for 10 years, during which time the share price increased tenfold. At Logitech, he strategically positioned the company into different markets, such as gaming (LogitechG) and video collaboration/live streaming tools, and oversaw the design of the most successful MX series. The tiny gaming business of Logitech, which started off at $40 Million grew to $1 Billion by the time he left. Logitech-MX series was founded during his tenure,
+Bracken Darrell has an amazing track record in leading consumer product companies and elevating the consumer experience. He previously served as the CEO of Logitech for 10 years, during which time the share price increased tenfold. At Logitech, he strategically positioned the company into different markets, such as gaming (LogitechG) and video collaboration/live streaming tools, and oversaw the design of Logitech's most successful product-line, the MX series. The tiny gaming business of Logitech, which started off at $40 Million grew to $1 Billion by the time he left.
 
 Before Logitech, Darrell was at Procter & Gamble, tasked with rejuvenating the sales of Old Spice's (male grooming products) to appeal to a younger demographic, which he successfully did. Darrell has a strong track record with companies that have lost its footing and needs new product lines to rejuvenate growth. This time is no different.
 

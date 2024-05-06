@@ -38,9 +38,10 @@ const returnsGainsClass = paperGains >=0 ?  'amount text-green-500' : 'amount te
         <p class=`${returnsGainsClass}`>{returns}%</p>
       </div>
     </div>
-    <IndustryPieCharts  client:load/>
 
     <PortfolioTable stockStaticData={stockStaticData} portfolioData={portfolioData} client:load />
+
+    <IndustryPieCharts  client:load/>
 
   </section>
 
