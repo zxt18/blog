@@ -1,14 +1,6 @@
 import { Chart } from "react-google-charts";
-import { getPortfolioData, getStockStaticData } from "../utils/utils";
+import { portfolioData, type PortfolioProps } from "../utils/utils";
 
-// export const data = [
-//   ["Task", "Hours per Day"],
-//   ["Work", 11],
-//   ["Eat", 2],
-//   ["Commute", 2],
-//   ["Watch TV", 2],
-//   ["Sleep", 7],
-// ];
 
 export const options = {
   title: "My Daily Activities",
@@ -23,41 +15,21 @@ export const options = {
   },
 };
 
-export function App() {
-
-}
-
-
-
-const stockStaticData = await getStockStaticData();
-
-
-
-// const 
-
-
-const portfolioData = await getPortfolioData()
-
-const industries : [string, number][] = Object.entries(portfolioData).map(([ticker, { portfolioPercentage }]) => {
-  const { industry } = stockStaticData[ticker];
-  return [industry, portfolioPercentage];
-});
-
-function calculateUniqueIndustry(industries: [string, number][]): [string, number][] {
-  return industries.reduce<[string, number][]>((accumulator, [industry, portfolioPercentage]) => {
-    const existingIndustryIndex = accumulator.findIndex(([existingIndustry]) => existingIndustry === industry);
-
-    if (existingIndustryIndex !== -1) {
-      accumulator[existingIndustryIndex][1] += portfolioPercentage;
-    } else {
-      accumulator.push([industry, portfolioPercentage]);
+function calculateUniqueIndustry(portfolioData : Array<PortfolioProps>): [string, number][] {
+  const sectorMap = new Map<string, number>();
+  portfolioData.forEach(item => {
+      if (sectorMap.has(item.sector)) {
+        sectorMap.set(item.sector, sectorMap.get(item.sector)! + item.portfolioPercentage)
+      } else {
+        sectorMap.set(item.sector, item.portfolioPercentage)
+      }
     }
-    
-    return accumulator;
-  }, []);
+  )
+  const industryPP: [string, number][] = Array.from(sectorMap.entries());
+  return industryPP
 }
 
-const uniqueIndustry: [string, any][] = calculateUniqueIndustry(industries);
+const uniqueIndustry: [string, any][] = calculateUniqueIndustry(portfolioData);
 uniqueIndustry.unshift(["Industry", "Portfolio Percentage"]);
 
 

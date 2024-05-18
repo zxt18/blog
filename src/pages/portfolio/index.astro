@@ -3,15 +3,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
 import Layout from "../../layouts/MainLayout.astro";
 
 import { PortfolioTable } from "../../components/PortfolioTable";
-import {calculateNetLiquidationValue, getPortfolioData, getStockStaticData} from "../../utils/utils";
+import {calculateNetLiquidationValue, portfolioData, } from "../../utils/utils";
 import { IndustryPieCharts} from "../../components/IndustryPieChart";
 
 
-const stockStaticData = await getStockStaticData();
-const portfolioData = await getPortfolioData();
-
-const cashDepositedInPortfolio = Object.values(portfolioData).reduce((sum, obj) => sum + obj.units * obj.averagePrice, 0);
-const netLiquidationValue = calculateNetLiquidationValue(portfolioData, stockStaticData)
+const cashDepositedInPortfolio = portfolioData.reduce((acc, currVal) => { 
+  if (currVal.symbol=="USD") { 
+    return acc + currVal.closePrice*currVal.quantity
+  } 
+  return acc + currVal.costBasis
+}, 0);
+const netLiquidationValue = calculateNetLiquidationValue(portfolioData)
 const paperGains = (netLiquidationValue - cashDepositedInPortfolio)
 const paperGainsClass = paperGains >=0 ?  'amount text-green-500' : 'amount text-red-500'
 const returns = (paperGains/cashDepositedInPortfolio * 100 ).toFixed(3)
@@ -39,7 +41,7 @@ const returnsGainsClass = paperGains >=0 ?  'amount text-green-500' : 'amount te
       </div>
     </div>
 
-    <PortfolioTable stockStaticData={stockStaticData} portfolioData={portfolioData} client:load />
+    <PortfolioTable portfolioData={portfolioData} client:load />
 
     <IndustryPieCharts  client:load/>
 
