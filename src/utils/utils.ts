@@ -2,7 +2,7 @@
 export function calculateNetLiquidationValue(portfolioData : Array<PortfolioProps> ) {
   const netLiquidationValue = portfolioData.reduce((acc, currVal) => {
     if (currVal.symbol.endsWith('0')) {
-      return acc + currVal.closePrice * Math.abs(currVal.quantity* 100) // for Options each unit is 100 shares
+      return acc + currVal.closePrice * Math.abs(currVal.quantity* 100) // for Options each unit is 100 shares.
     }
     return acc + currVal.closePrice * Math.abs(currVal.quantity)
   },0);
