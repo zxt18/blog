@@ -5,7 +5,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <MainLayout title={title} description={description}>
-  <section class="max-w-3xl mx-auto my-8">
+  <section class="max-w-7xl mx-auto my-8">
     {
       heroImage && (
         <div class="border border-zinc-800">
@@ -32,7 +32,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
           }
         </div>
       </div>
-      <article class="prose prose-invert py-8 mx-auto">
+      <article class="prose prose-invert prose-lg text-xl mx-auto max-w-full">
         <slot />
       </article>
     </div>
