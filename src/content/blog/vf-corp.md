@@ -32,10 +32,10 @@ The stock has crashed 88% from its all-time high of $100 per share and is curren
 In short, you can attribute the derating of the stock to four main reasons :  *Deteriorating Brand Heat*, *Concerns on Debt Obligations*, *Dividend Cuts*, and a *Managerial Mess*. I truly love this opportunity because the value-destruction of VF Corp was mostly self-inflicted by management while the consumer's affinity towards the brand remains strong. 
 
 ## The Turnaround Opportunity
-Having laid the backstory on how we got here, I would now lay out why they have more than enough to pull this turnaround. 
+Having laid down the backstory preceding the downfall, I would now lay out my thesis on why they have more than enough to pull this turnaround.
 
 ### 1) Strong brand equity
-Vans remains the number one skatingboard across the globe and one of the only brands that champions authenticity and being Off-The-Wall (non-conformity). This motto resonates strongly with many subcultures including skateboarders, creatives, punk-culture which gives them this unique favoritism over othe brands. Yet it is also broad enough for everyone to embrace.
+Vans is the number one skatingboard footwear brand across the globe and one of the only billion dollar brand that champions authenticity and being Off-The-Wall (non-conformity). This motto resonates strongly with different subcultures including skateboarders, surfers, creatives, punk/emo culture, which gives them Vans this unique favoritism over other brands, yet it is also broad enough for everyone to appreciate.
 
 > *The most Off-The-Wall thing you can do is to be yourself.* 
 > *– Vans*

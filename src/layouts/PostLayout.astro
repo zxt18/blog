@@ -33,6 +33,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         </div>
       </div>
       <article class="prose prose-invert prose-lg text-xl mx-auto max-w-full">
+        <style>
+          :global(.prose a) {
+            @apply text-blue-600 underline;
+          }
+          :global(.prose a:hover) {
+            @apply text-blue-700;
+          }
+        </style>
+
         <slot />
       </article>
     </div>
