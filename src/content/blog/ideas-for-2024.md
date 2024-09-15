@@ -38,7 +38,7 @@ A diagram extracted from the Financial Times shows that small caps have to servi
 ![Small Cap struggles](../../../public/small-cap-struggles.png)
 
 
-### Election Year : 
+### Election Year
 Although the Federal Reserve should operate independently from political influence, Jereme Powell is indirectly incentivized to hyperinflate the economy and keep markets rallying to declare economic success for the current administration.
 
 
