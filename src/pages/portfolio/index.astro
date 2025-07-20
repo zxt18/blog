@@ -2,11 +2,7 @@
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
 import Layout from "../../layouts/MainLayout.astro";
 
-import { PortfolioTable } from "../../components/PortfolioTable";
 import {calculateNetLiquidationValue, portfolioData, } from "../../utils/utils";
-import { IndustryPieCharts} from "../../components/IndustryPieChart";
-
-
 import htmlContent from '../../../public/modified_positions_data_1708.htm?raw'
 
 
@@ -50,7 +46,7 @@ const returnsGainsClass = paperGains >=0 ?  'amount text-green-500' : 'amount te
     <IndustryPieCharts  client:load/> -->
 
   <!-- </section> -->
-  <iframe srcdoc={htmlContent} width="100%" height="1024px" style="border: none;"></iframe>
+  <!-- <iframe srcdoc={htmlContent} width="100%" height="1024px" style="border: none;"></iframe> -->
 </Layout>
 
 

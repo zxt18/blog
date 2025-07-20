@@ -4,7 +4,7 @@ description: "Overview and Commentary"
 pubDate: "1 Sep 2024"
 ---
 
-## Going Against the Most Crowded Trade
+<!-- ## Going Against the Most Crowded Trade
 The image on the bottom left published by Goldman Sachs in February 2024 is the backbone of my investment thesis and the opportunity i'm trying to capture. I am taking the otherside of the most crowded trade. Part of it may be the programming inside me on how I live my life, for which I tend to avoid herd behaviour, but the main arguments are driven and grounded by fundamental shifts in earnings and market liquidity. Here are two main points on why I am taking this trade : 
 
 1. Earnings of the MAG7 and ex-MAG7 are poised to normalize e.g. (MAG7 EPS YoY growth rate slows, and the ex-MAG7 catches up). MAG7 EPS growth throughout 2023 to mid 2024 was strong hence their outperformance. The opposite will also happen.
@@ -22,13 +22,7 @@ And that thesis is starting to play out, the bottom right shows the estimated MA
     <img src="/portfolio_aug_2024/mag7-decelerating-eps-growth.png" alt="mag7-decelerating-eps-growth" style="height: 500px">
     <p style="margin-top: 10px; font-style: italic;">S&P 493 poised to catch up - posted in August 2024</p>
   </div>
-</div>
-
-
-<!-- 
-As a user of LLMs like ChatGPT myself, the productivity boosts of LLMs are minimal e.g. creating a starting template (for a dispute letter, a HTML template, how to use this EXCEL function etc.).  And the occasional hallucination and spurious answers you get back from it makes the need for the user to spend as much time to fact-check, and debug.Couple that with fierce competition between the big-tech and tech-unicorns, they really wouldn't be generating the ROI necessary. 
-
-This is analogous to how Meta in 2022 had to slow down spending on RealityLabs, their VR deparment focused on creating revolutionary headsets, which were at the time premature to be widely adopted in the next 3 years. The same will happen for all these GPU spend until the next technological brekathrough. Besides, the loneliness epidemic that followed from the Covid pandemic means us humans crave deeper human-to-human interactions, we crave a real-community. Many people are experiencing digital fatigue/burnout, and applications that assist on setting up such a real-community(Strava Run Clubs, Eventbrite) instead of replacing it (Virtual Reality) will truly benefit. -->
+</div> -->
 
 ## Updates on My Top 4 Companies
 ---
@@ -72,19 +66,30 @@ VF Corp is like a beloved, classic car - admired for its elegance, long history,
 <details class="my-4 p- rounded-lg">
   <summary class="cursor-pointer text-lg font-semibold text-blue-600">Expand to read about PayPal</summary>
   <div class="mt-2">
-    **Investment Thesis:** Increasing adoption of digital payments.
-    
-    <!-- Add more content as needed -->
+    <!-- **Investment Thesis:** Increasing adoption of digital payments. -->
+    <!-- Add more content as neededs -->
   </div>
 </details>
 ---
 
-3. ## Alibaba  
-- **Brief Description:** Chinese e-commerce giant.  
-- **Investment Thesis:** Dominant market position in China and international expansion. Todo
+3. ## Alibaba
+<details class="my-4 p- rounded-lg">
+  <summary class="cursor-pointer text-lg font-semibold text-blue-600">Expand to read about Alibaba</summary>
+  <div class="mt-2">
+    <!-- **Investment Thesis:** Increasing adoption of digital payments. -->
+    <!-- Add more content as neededs -->
+  </div>
+</details>  
+<!-- - **Brief Description:** Chinese e-commerce giant.  
+- **Investment Thesis:** Dominant market position in China and international expansion. -->
 
 ---
 
 4. ## Cooper Standard 
-- **Brief Description:** Automotive supplier.  
-- **Investment Thesis:** Strong market share, technological advancements, and exposure to the growing automotive industry. Todo
+<details class="my-4 p- rounded-lg">
+  <summary class="cursor-pointer text-lg font-semibold text-blue-600">Expand to read about Cooper Standard</summary>
+  <div class="mt-2">
+    <!-- **Investment Thesis:** Increasing adoption of digital payments. -->
+    <!-- Add more content as neededs -->
+  </div>
+</details>  
